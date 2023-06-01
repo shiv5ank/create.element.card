@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+</head>
+
+<body>
+    <div id="root" style=" padding: 40px; width: 350px; margin-left: 300px; height: '300px';">
+    </div>
+    <script>
+        let card = React.createElement('div', { style: { width: '300px', height: '500px', padding: '30px', backgroundColor: 'white', boxShadow: '0 0 10px black', borderRadius: '10px' } },
+            [
+                React.createElement('img', { src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRij6dtiHizH96qpCOe8WeXXP3yLyQJkPdGVg&usqp=CAU', style: { width: '315px', height: '300px' } }),
+                React.createElement('h2', { style: { textAlign: 'center' } }, 'Dima Blover'),
+                React.createElement('span', { style: { marginLeft: '100px' } }, 'UI/UX Designer'),
+                React.createElement('div', { style: { display: 'flex', justifyContent: 'space-around' } },
+                    React.createElement('p', null, '26'), React.createElement('p', null, '94'), React.createElement('p', null, '139')),
+                React.createElement('div', { style: { display: 'flex', justifyContent: 'space-around', marginLeft: '13px', paddingBottom: '40px' } },
+                    React.createElement('h3', null, 'Shoot'),
+                    React.createElement('h3', null, 'Following'),
+                    React.createElement('h3', null, 'Followers'))
+            ])
+
+        ReactDOM.render(card, document.getElementById('root'))
+    </script>
+</body>
+
+</html>
